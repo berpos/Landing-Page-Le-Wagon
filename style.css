@@ -1,0 +1,427 @@
+/* Write some CSS below */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 40px 40px;
+  z-index: 999;
+}
+
+header.sticky {
+  padding: 10px 40px;
+  background: #fdfcfb;
+  box-shadow: 0 2px 32px 0 rgba(0, 0, 0, 0.1);
+}
+
+header .logodiv {
+  display: flex;
+  align-items: center;
+}
+
+ header .logodiv .logo {
+  width: 3rem;
+  margin-right: 0.8rem;
+}
+
+header .main{
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 2em;
+  letter-spacing: 2px;
+  transition: 0.6s;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li {
+  position: relative;
+  list-style: none;
+}
+
+header ul li a {
+  position: relative;
+  margin:  0 15px;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 500;
+  transition: 0.6s;
+  font-size: 18px;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+
+
+#BGV {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.box {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border:1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  width: 1050px;
+  margin: 0 auto;
+  align-self: center;
+  margin-bottom: 4rem;
+  display: flex;
+}
+
+.image {
+  width: 50%;
+}
+
+.box a {
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  font-size: 24px;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  padding: 14px 70px;
+  transition: 0.3s all ease;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.box a:hover {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.learn {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.button {
+  margin-top: auto;
+  margin-right: 8rem;
+  margin-bottom: 3rem;
+}
+
+.learnh {
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: .10em;
+  padding-top: 8rem;
+  padding-left: 2rem;
+  text-shadow: 1px 3px 8px rgba(0, 0, 0, 0.6);
+}
+
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header.sticky ul li a {
+  color: #000;
+}
+
+header.sticky .main2 {
+  color: #000;
+}
+
+.about {
+  background: #fdfcfb;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.aboutContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.aboutImage {
+  margin-right: 40px;
+  overflow: hidden;
+  border-radius: 60px;
+}
+
+.aboutImage img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: 0.5s ease;
+}
+
+.aboutImage img:hover {
+  transform: scale(1.2);
+}
+
+.aboutContent {
+  flex: 1;
+}
+
+.aboutContent h2 {
+  font-size: 44px;
+  margin-bottom: 15px;
+}
+
+.aboutContent p {
+  font-size: 17px;
+  line-height: 1.5;
+  color: #666;
+}
+
+.aboutContent .readMore {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #D22B2B;
+  color: #fff;
+  font-size: 19px;
+  text-decoration: none;
+  border-radius: 25px;
+  margin-top: 15px;
+  transition: 0.3s ease;
+}
+
+.aboutContent .readMore:hover {
+  background-color: rgba(210, 43, 43, 0.9);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2)
+}
+
+.contact {
+  background-color: #fdfcfb;
+}
+
+footer {
+  background: #D22B2B;
+}
+
+.footerContainer {
+  width: 100%;
+  padding: 20px 30px 20px;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+}
+
+.socialIcons a {
+  text-decoration: none;
+  padding: 20px;
+  opacity: 90%;
+}
+
+.socialIcons a i{
+  font-size: 2em;
+  color: #fff;
+  opacity: 1;
+}
+
+.socialIcons a:hover {
+  transition: 0.5s;
+}
+
+.socialIcons a:hover i {
+  opacity: 0.6;
+  transition: 0.5s;
+}
+
+.footerNav {
+  margin: 30px 0;
+}
+
+.footerNav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.footerNav ul li a {
+  color: #fff;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.footerNav ul li a:hover {
+  opacity: 1;
+}
+
+.footerBottom {
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+
+header .logodiv2 {
+  display: flex;
+  align-items: center;
+}
+
+ header .logodiv2 .logo {
+  width: 3rem;
+  margin-right: 0.8rem;
+}
+
+header .main2 {
+  color: #000;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 2em;
+  letter-spacing: 2px;
+  transition: 0.6s;
+}
+
+.contactContainer {
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactLeft {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+.contactLeftTitle {
+  font-weight: 600;
+  color: #000;
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+
+.contactImage {
+  max-width: 70vh;
+  padding-top: 50px;
+}
+
+.contactLeftTitle hr {
+  border: none;
+  width: 200px;
+  height: 5px;
+  background-color: #D22B2B;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.contactInput {
+  width: 400px;
+  height: 50px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  outline: none;
+  padding-left: 25px;
+  font-weight: 500;
+  color: #666;
+  border-radius: 50px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease;
+}
+
+.contactLeft textarea {
+  height: 140px;
+  padding-top: 15px;
+  border-radius: 20px;
+  resize: none;
+}
+
+.contactInput:focus {
+  border: 2px solid #D22B2B;
+}
+
+.contactInput::placeholder {
+  color: #666;
+}
+
+.contactLeft a {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 16px;
+  color: #fff;
+  gap: 10px;
+  border: none;
+  border-radius: 50px;
+  background-color: #D22B2B;
+  cursor: pointer;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+
+.contactLeft a:hover {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.contactLeft button i {
+  height: 15px;
+}
+
+
+
+

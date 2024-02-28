@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <title>Le Wagon</title>
+</head>
+
+<body>
+
+  <div>
+    <!--Background Video-->
+    <video src="images/production_id_4974884 (1080p).mp4" autoplay loop muted playsinline id="BGV"></video>
+
+    <!--Navbar-->
+
+    <header>
+      <div class="logodiv2">
+        <img src="images/lewagon.png" class="logo">
+        <a href="index.html" class="main2">Le Wagon</a>
+      </div>
+      <ul>
+        <li><a href="index.html" style="color: #000;">Home</a></li>
+        <li><a href="#about" style="color: #000;">About</a></li>
+        <li><a href="#contact" style="color: #000;">Contact</a></li>
+      </ul>
+    </header>
+
+    <!--About Section-->
+    <section id="about" class="about">
+      <div class="container">
+        <section class="aboutContainer">
+          <div class="aboutImage">
+            <img src="images/dmcx4d4l3b8olc22xxmr-1.png" alt="">
+          </div>
+          <div class="aboutContent">
+            <h2>We believe that everyone can continuously thrive in their careers.</h2>
+            <p>Since 2013, we have taught people the skills they need to land their dream job in tech, launch their
+              startup, or change careers. Through immersive bootcamps in web development and data, we offer a
+              life-changing learning experience!</p>
+            <a href="https://www.lewagon.com/about-us" class="readMore">Read More</a>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!--Contact Section-->
+    <section id="contact" class="contact">
+      <div class="contactContainer">
+        <form action="#" class="contactLeft">
+          <div class="contactLeftTitle">
+            <h2>Contact Us</h2>
+            <hr>
+          </div>
+          <input type="text" name="name" placeholder="Your Name" class="contactInput">
+          <input type="email" name="email" placeholder="Your Email" class="contactInput">
+          <textarea name="message" placeholder="Your Message" class="contactInput"></textarea>
+          <a href="https://www.lewagon.com/contact" class="readMore">Learn More <i
+              class="fa-solid fa-arrow-right"></i></a>
+        </form>
+        <div class="contactRight">
+          <img src="images/contact.png" class="contactImage">
+        </div>
+      </div>
+    </section>
+
+    <!--footer-->
+    <footer>
+      <div class="footerContainer">
+        <div class="socialIcons">
+          <a href="https://shorturl.at/iuW57"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://shorturl.at/avHI3"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://shorturl.at/BSWZ8"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="footerNav">
+          <ul>
+            <li><a href="https://shorturl.at/iuW57">Instagram</a></li>
+            <li><a href="https://shorturl.at/avHI3">Facebook</a></li>
+            <li><a href="https://shorturl.at/BSWZ8">LinkedIn</a></li>
+          </ul>
+        </div>
+        <hr>
+        <div class="footerBottom">
+          <p>© 2024 Le Wagon, Inc. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script>
+    window.addEventListener('scroll', function () {
+      let num = (window.scrollY / window.innerHeight) * 2;
+      document.getElementById('about').style.webkitFilter = 'blur(' + num + 'px)'
+    })
+
+  </script>
+  <script src="main.js"></script>
+</body>
+
+</html>
